@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns="http://java.sun.com/xml/ns/javaee"
+xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	<servlet>
+		<servlet-name>Jdoproject</servlet-name>
+		<servlet-class>package1.JdoprojectServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Jdoproject</servlet-name>
+		<url-pattern>/jdoproject</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Jdoproject1</servlet-name>
+		<servlet-class>package1.JdoprojectServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Jdoproject1</servlet-name>
+		<url-pattern>/retrieve</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Jdoproject2</servlet-name>
+		<servlet-class>package1.Project</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Jdoproject2</servlet-name>
+		<url-pattern>/project</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>Welcome</servlet-name>
+		<servlet-class>package1.WelcomeServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Welcome</servlet-name>
+		<url-pattern>/welcome</url-pattern>
+	</servlet-mapping>
+	<welcome-file-list>
+		<welcome-file>welcome.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
