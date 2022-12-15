@@ -6,6 +6,15 @@
 version: 2
 updates:
   - package-ecosystem: "npm" # See documentation for possible values
-    directory: "/" # Location of package manifests
+    directory: "/packages/settings/" # Location of package manifests
+    target-branch: "staging"
+    open-pull-requests-limit: 3
     schedule:
       interval: "daily"
+      time: "10:30"
+      timezone: "Asia/Kolkata"
+    allow: 
+      - dependency-name: "@adaptavant/*" # updates packages of @adaptavant 
+    ignore:
+      - dependency-name: "@adaptavant/*" # ignores all major updates
+        update-types: ["version-update:semver-major"]
